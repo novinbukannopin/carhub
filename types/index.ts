@@ -4,7 +4,10 @@ export interface CustomButtonProps {
     title: string,
     containerStyles?: string,
     handleClick?: MouseEventHandler<HTMLButtonElement>,
-    btnType?: "button" | "submit" | "reset"
+    btnType?: "button" | "submit" | "reset",
+    textStyles?: string,
+    rightIcon?: string,
+    isDisabled?: boolean
 }
 
 export interface SearchManufacturerProps {
@@ -25,4 +28,22 @@ export interface CarProps {
     make: string,
     model: string,
     transmission: string,
+}
+
+export interface FilterProps {
+    manufacturer: string,
+    year: string,
+    fuel: string,
+    limit: number,
+    model: string
+}
+
+export interface OptionProps {
+    title: string,
+    value: string
+}
+
+export interface CustomFilterProps {
+    title: string,
+    options: OptionProps[],
 }
