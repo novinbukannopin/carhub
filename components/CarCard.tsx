@@ -2,7 +2,7 @@
 
 import React, {useState} from 'react';
 import {CarProps} from "@/types";
-import {calculateCarRent} from "@/utils";
+import {calculateCarRent, generateCarImageUrl} from "@/utils";
 import Image from "next/image";
 import {CarDetails, CustomButton} from "@/components/index";
 
@@ -37,7 +37,7 @@ const CarCard = ({car}: CarCardProps) => {
 
             <div className={"relative w-full h-40 object-contain my-3"}>
                 <Image
-                    src={"/hero.png"}
+                    src={generateCarImageUrl(car)}
                     alt={"Car Model"}
                     fill priority
                     className={"object-contain"}

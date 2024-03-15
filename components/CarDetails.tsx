@@ -119,7 +119,6 @@ const CarDetails = ({isOpen, closeModal, car}: CarDetailsProps) => {
                                         </div>
                                     </Dialog.Panel>
                                 </Transition.Child>
-
                             </div>
                         </div>
                     </Transition.Child>
